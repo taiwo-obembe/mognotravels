@@ -64,11 +64,11 @@ class TagController extends Controller
             }
             $tag->name = $request->name;
             $tag->save();
-            $message = "Record updated!";
+            $message = "Record updated successfully!";
             return response()->json(["message" => $message], 200);
         } catch (Exception $error) {
             Log::info("Tag\TagController@updateTag" .$error->getMessage());
-            $message = "Unable to process request";
+            $message = "Unable to update request";
             return response()->json(["message" => $message], 500);
 
         }
