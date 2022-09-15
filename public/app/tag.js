@@ -180,7 +180,7 @@ if (window.Vue) {
                                 } else {
                                     this.$notify.error({
                                         title: 'Error',
-                                        message: 'oops! Unable to complete request.'
+                                        message: 'Unable to complete request.'
                                     });
                                 }
                             });
