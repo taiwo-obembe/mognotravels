@@ -68,7 +68,7 @@ class TagController extends Controller
             return response()->json(["message" => $message], 200);
         } catch (Exception $error) {
             Log::info("Tag\TagController@updateTag" .$error->getMessage());
-            $message = "Unable to update request";
+            $message = "Unable to process request";
             return response()->json(["message" => $message], 500);
 
         }
